@@ -1,82 +1,74 @@
-/* Global Styles */
+/* Global styles */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
-    color: #333;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-/* Header Styles */
 header {
-    background-color: #4CAF50;
+    background-color: #333;
     color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-/* Section Styles */
-section {
-    padding: 40px 0;
-    text-align: center;
-}
-
-h2 {
-    color: #333;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 1rem;
-    color: #555;
-}
-
-/* Project Styles */
-.project-list {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-}
-
-.project {
-    background-color: #fff;
-    border: 1px solid #ddd;
     padding: 20px;
-    width: 30%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.project h3 {
-    color: #4CAF50;
-    font-size: 1.25rem;
-}
-
-/* Footer Styles */
 footer {
     background-color: #333;
     color: white;
-    text-align: center;
-    padding: 10px 0;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Image Container */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.image-piece {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #333;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#piece-1 { background-image: url('part1.jpg'); }
+#piece-2 { background-image: url('part2.jpg'); }
+#piece-3 { background-image: url('part3.jpg'); }
+#piece-4 { background-image: url('part4.jpg'); }
+
+/* Buttons for purchasing */
+.buy-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.buy-btn:hover {
+    background-color: #45a049;
+}
+
+/* Countdown Timer Style */
+#countdown {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    color: red;
 }
